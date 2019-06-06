@@ -22,7 +22,6 @@ import java.util.logging.Logger;
 public class Lab3 extends ConsoleUI<Commands> {
     
     public static final Semaphore SEMAPHORE = new Semaphore(1, true);
-    public static final Semaphore SEMAPHORE2 = new Semaphore(1, true);
     /**
      * Точка входа в приложение.
      * 
@@ -50,7 +49,7 @@ public class Lab3 extends ConsoleUI<Commands> {
         String targetDirName;
         String folderName;
         Scanner in = new Scanner(System.in);
-        synchronized (SEMAPHORE) {
+        
             try {
                 SEMAPHORE.acquire();
                 switch (command) {
@@ -112,7 +111,5 @@ public class Lab3 extends ConsoleUI<Commands> {
             } catch (InterruptedException ex) {
                 Logger.getLogger(Lab3.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
     }
-    
 }

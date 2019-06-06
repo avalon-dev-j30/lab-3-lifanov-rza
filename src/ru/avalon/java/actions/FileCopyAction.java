@@ -45,8 +45,8 @@ public class FileCopyAction implements Action {
                         Logger.getLogger(FileCopyAction.class.getName()).log(Level.SEVERE, null, ex);
                     }
             } else System.out.println("the directory is empty!");
-
-    }
+            
+        }
     /**
      * {@inheritDoc}
      */
