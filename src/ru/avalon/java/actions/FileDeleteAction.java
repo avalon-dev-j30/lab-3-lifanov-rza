@@ -26,7 +26,7 @@ public class FileDeleteAction implements Action {
     
     @Override
     public void close() throws Exception {
-                // нет необходимости
-        throw new UnsupportedOperationException("Not supported yet."); 
+                // нет необходимости, нечего освобождать
+         
     }
 }

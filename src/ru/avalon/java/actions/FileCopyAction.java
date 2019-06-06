@@ -52,10 +52,10 @@ public class FileCopyAction implements Action {
      */
     @Override
     public void close() throws Exception {
-                // нет необходимости
+                // нет необходимости, нечего освобождать
         /*
          * TODO №3 Реализуйте метод close класса FileCopyAction
          */
-        throw new UnsupportedOperationException("Not implemented yet!");
+        
     }
 }

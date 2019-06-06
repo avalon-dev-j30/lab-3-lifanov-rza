@@ -33,11 +33,11 @@ public class FileMoveAction implements Action {
      */
     @Override
     public void close() throws Exception {
-                // нет необходимости
+                // нет необходимости, нечего освобождать
         /*
          * TODO №5 Реализуйте метод close класса FileMoveAction
          */
-        throw new UnsupportedOperationException("Not implemented yet!");
+        
     }
 
 }
